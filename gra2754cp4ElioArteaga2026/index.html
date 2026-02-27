@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gardening 101 | Elio Arteaga, 2026</title>
+	<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+body {
+    margin: 0;
+}
+header {
+    height: 200px;
+    background-color: orange;
+}
+nav {
+    background-color: black;
+}
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+#about {
+    height: 600px;
+    background-color: orangered;
+}
+#gallery {
+    height: 600px;
+    background-color: teal;
+}
+#contact {
+    height: 600px;
+    background-color: aqua;
+}
+footer {
+    height: 200px;
+    background-color: limegreen;
+}
+ul a li {
+    padding: 10px;
+    list-style-type: none;
+}
+ul a li:hover {
+    background-color: red;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+wrapper {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.topnav.responsive a{
+    display:block;
+}
+.topnav.responsive a:not(:first-child) {
+     display: none;
+}
+.topnav .fa-times {
+	display: block;
+	padding:10px;
+	color:white;
+}
+.topnav .fa-bars {
+	display: none;
+}
+.topnav.responsive .fa-times {
+	display: none;
+}
+.topnav.responsive .fa-bars {
+	display: block;
+	padding:10px;
+	color:white;
+}
+@media (min-width:1000px) {
+.topnav a:not(:first-child),.topnav.responsive a:not(:first-child) {
+display:inline-block;
+}
+.topnav.responsive .icon {
+display:none;
+}
+main{
+	display: grid;
+	grid-template-columns: auto auto;
+	}
+}
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</head>
+
+<body>
+<wrapper>
+  <header></header>
+  <nav class="topnav responsive" id="myTopnav">
+  <a href="javascript:void(0);" class="icon"
+     onclick="myFunction()">
+  <i class="fa fa-bars"></i><i class="fa fa-times"></i>
+    <ul>
+      <a href="#about"><li>About</li></a>
+      <a href="#gallery"><li>Gallery</li></a>
+      <a href="#contact"><li>Contact</li></a>
+    </ul>
+	  </a>
+  </nav>
+  <div id="about"></div>
+  <main>
+    <section id="gallery"></section>
+    <section id="contact"></section>
+  </main>
+  <footer></footer>
+</wrapper>
+</body>
+</html>
