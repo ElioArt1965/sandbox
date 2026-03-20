@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<!-- TemplateBeginEditable name="doctitle" -->
+<title>Natalie Merchant | Home | Elio Arteaga, 2026</title>
+	<!-- TemplateEndEditable -->
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<wrapper>
+  <header><img src="" alt="" width="" height="" class="logo">
+    <h1>Natalie Merchant</h1>
+  </header>
+  <nav>
+      <a href="index.html"><li>Home</li></a>
+	  <a href="news.html"><li>News</li></a>
+	  <a href="music.html"><li>Music Store</li></a>
+	  <a href="videos.html"><li>Videos</li></a>
+	  <a href="concerts.html"><li>Concerts</li></a>
+	  <a href="photos.html"><li>Photo Gallery</li></a>
+	  <a href="mailing.html"><li>Join Mailing List</li></a>
+	  <a href="merch.html"><li>Merch Store</li></a>
+	  <a href="blog.html"><li>Blog</li></a>
+	  <a href="privacy.html"><li>Privacy Statement</li></a>
+  </nav>
+  <!-- TemplateBeginEditable name="EditRegion1" -->
+  <main>
+    <h2>Tiger Lily Available Now</h2>
+  </main>
+  <!-- TemplateEndEditable -->
+  <footer>
+	<p>&copy; 2026, Elio Arteaga. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+  </footer>
+</wrapper>
+</body>
+</html>
