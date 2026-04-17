@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travelocity | Elio Arteaga, 2026</title>
+<script src="https://kit.fontawesome.com/a1fb0d7532.js" crossorigin="anonymous"></script>
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(eiffel_tower.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(114,201,229,1.00);
+    background-position: 0 100px;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+}
+header {
+    height: 100px;
+    background-color: rgba(22,77,173,1.00);
+}
+#Tabs1 ul  {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 {
+    background-image: none;
+    background-color: rgba(255,255,255,0.50);
+}
+#Tabs1 ul li {
+    text-align: center;
+}
+#Tabs1 ul li i {
+    font-size: 30px;
+    color: rgba(255,0,4,1.00);
+}
+	#tabs-1 div{
+		display:grid;
+		grid-template-columns: 16% 16% 16% 16% 16% 10%;
+		gap:10px;
+	}
+.search {
+    background-color: rgba(0,28,199,1.00);
+    color: rgba(255,255,255,1.00);
+    font-weight: bold;
+}
+h1 {
+    padding: 20px;
+    margin: 0;
+}
+input, select {
+    border-radius: 10px;
+    border: thin solid gray;
+    padding: 10px;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header>
+  <wrapper>
+    <h1>Travelocity</h1>
+  </wrapper>
+</header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><i class="fa-solid fa-plane"></i><br>
+Flights</a></li>
+      <li><a href="#tabs-2"><i class="fa-solid fa-hotel"></i><br>
+Hotels</a></li>
+      <li><a href="#tabs-3"><i class="fa-solid fa-car-side"></i><br>
+Cars</a></li>
+      <li><a href="#tabs-4"><i class="fa-solid fa-suitcase"></i><br>
+Packages</a></li>
+      <li><a href="#tabs-5"><i class="fa-solid fa-umbrella-beach"></i><br>
+Activities</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>Find your flights</p>
+      <div>
+        <input type="text" placeholder="Leaving from">
+        <input type="text" placeholder="Going to"><input type="date"><input type="date"><select>
+          <option value="0">Number of travelers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          </select><input type="submit" class="search" value="Search">
+      </div>
+    </div>
+    <div id="tabs-2">
+      <p>Find your hotels</p>
+    </div>
+    <div id="tabs-3">
+      <p>Find your car rental</p>
+    </div>
+    <div id="tabs-4">
+      <p>Bundle and save</p>
+    </div>
+    <div id="tabs-5">
+      <p>Find things to do</p>
+    </div>
+  </div>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
