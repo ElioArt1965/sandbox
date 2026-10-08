@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  background-color: lightblue;
+  margin:0;
+
+}
+wrapper{
+width:80%;
+display:block;
+margin:auto;
+background-color:rgba(255,255,255,.5);
+}
+.topnav {
+  background-color: #333;
+}
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover{
+  background-color:red;
+}
+
+section{
+  height:500px;
+  padding:20px;
+}
+.topnav.responsive a{
+display:block;
+}
+.topnav.responsive a:not(:first-child) {display: block;}
+.topnav a:not(:first-child) {display: none;}
+
+.topnav.responsive .fa-bars {
+    display: none;
+}
+.topnav.responsive .fa-times {
+    display: block;
+}
+.topnav .fa-times {
+    display: none;
+}
+.topnav .fa-bars {
+    display: block;
+}
+
+@media (min-width:600px){
+.topnav a:not(:first-child),.topnav.responsive a:not(:first-child){
+display:inline-block;
+}
+.topnav .icon{display:none;}
+}
+
+</style>
+</head>
+<body>
+<wrapper>
+
+<header>
+<nav class="topnav" id="myTopnav">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i><i class="fa fa-times"></i>
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+
+  </a>
+</nav>
+</header>
+<main>
+<section id="home"><h2>Home</h2></section>
+<section id="about"><h2>About</h2></section>
+<section id="news"><h2>News</h2></section>
+<section id="contact"><h2>Contact</h2></section>
+</main>
+<footer></footer>
+
+</wrapper>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
+
+
