@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Name of Restaurant Here | First Last Name, 2026</title>
+<style>
+@font-face {
+    font-family: 'soreanbold';
+    src: url('sorean_bold-webfont.woff2') format('woff2'), url('sorean_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bremlinregular';
+    src: url('bremlin-webfont.woff2') format('woff2'), url('bremlin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    background-color: lightblue;
+    font-family: 'soreanbold';
+}
+wrapper {
+    width: 500px;
+    display: block;
+    margin: auto;
+    background-color: rgba(255,255,255,0.50);
+    padding: 20px;
+}
+header {
+    background-color: cornflowerblue;
+}
+.topwrapper {
+    background-color: transparent;
+}
+h1 {
+    font-family: 'bremlinregular';
+	text-shadow: 0 0 50px red, 0 0 20px white, 0 0 10px white;
+}
+	.menu{
+		width:100%;
+		height:auto;
+	}
+	.video{
+		width:100%;
+		height:auto;
+	}
+	article{
+		display:grid;
+		grid-template-columns:auto;
+		gap:16px;
+	}
+	@media (min-width:1000px){
+		article{
+			grid-template-columns:48% 48%;
+		}
+	}
+</style>
+</head>
+
+<body>
+<header>
+  <wrapper class="topwrapper"> <img src="Chilis Logo.png" class="logo" />
+    <h1>Name of Restaurant</h1>
+  </wrapper>
+</header>
+<wrapper>
+  <main>
+    <h2>Come On In!</h2>
+	  <video src="restaurant1.mp4" autoplay muted loop controls class="video"></video> 
+    <img src="banner.jpg" class="banner" /><article><section>
+	  <h3>Special of the Day</h3>
+	  <iframe width="100%" height="500" src="https://www.youtube.com/embed/c2S1lyGgw_I?si=4DgU1X2_WISbBqQV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3>Menu</h3>
+    <ul>
+      <li>Menu Item<br />
+        <img src="menu1.jpg" class="menu" /></li>
+      <li>Menu Item<br />
+        <img src="menu2.jpg" class="menu" /></li>
+      <li>Menu Item<br />
+        <img src="menu3.jpg" class="menu" /></li>
+	  </ul></section>
+	  <section>
+    <h3>Location</h3>
+    <!--
+        Copy-and-paste Google Map below
+        -->
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229268.84145865194!2d-80.36346679643086!3d26.120923112081186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9091d78557839%3A0x77c066bdac487bbb!2sTexas%20de%20Brazil%20-%20Sunrise!5e0!3m2!1sen!2sus!4v1793750789976!5m2!1sen!2sus" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <h3>Contact Us</h3>
+    <ul>
+      <li>305-237-1672</li>
+      <li>email@company.com</li>
+    </ul></section>
+	  </article>
+  </main>
+  <footer>
+    <p>&copy; 2026, Your Name. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+  </footer>
+</wrapper>
+</body>
+</html>
