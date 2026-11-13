@@ -52,6 +52,15 @@ h1 {
 		gap:16px;
 	}
 	@media (min-width:1000px){
+		wrapper{
+			width:1000px;
+		}
+		h1{
+			display: inline;
+		}
+		.logo{
+			vertical-align: middle;
+		}
 		article{
 			grid-template-columns:48% 48%;
 		}
@@ -69,8 +78,13 @@ h1 {
   <main>
     <h2>Come On In!</h2>
 	  <video src="restaurant1.mp4" autoplay muted loop controls class="video"></video> 
-    <img src="banner.jpg" class="banner" /><article><section>
-	  <h3>Special of the Day</h3>
+    <img src="banner.jpg" class="banner" />
+	  
+	  <article>
+		  
+		  
+		  <section>
+			  <h3>Special of the Day</h3>
 	  <iframe width="100%" height="500" src="https://www.youtube.com/embed/c2S1lyGgw_I?si=4DgU1X2_WISbBqQV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <h3>Menu</h3>
     <ul>
@@ -81,6 +95,8 @@ h1 {
       <li>Menu Item<br />
         <img src="menu3.jpg" class="menu" /></li>
 	  </ul></section>
+		  
+		  
 	  <section>
     <h3>Location</h3>
     <!--
@@ -92,7 +108,10 @@ h1 {
       <li>305-237-1672</li>
       <li>email@company.com</li>
     </ul></section>
+		  
 	  </article>
+	  
+	  
   </main>
   <footer>
     <p>&copy; 2026, Your Name. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
