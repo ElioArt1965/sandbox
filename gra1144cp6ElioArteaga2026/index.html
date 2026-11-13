@@ -31,6 +31,28 @@ main {
     width: 100%;
     height: auto;
 }
+#colors button {
+    width: 50px;
+    margin: 10px;
+    border-radius: 25px;
+    border: thick solid white;
+    height: 50px;
+}
+#colors button:hover {
+    border-color: black;
+}
+section {
+    height: 1015px;
+}
+#blue-btn {
+    background-color: #50697d;
+}
+#green-btn {
+    background-color: #647642;
+}
+#purple-btn {
+    background-color: #622f68;
+}
 </style>
 <script type="text/javascript">
 function MM_swapImgRestore() { //v3.0
@@ -54,6 +76,13 @@ function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
 </script>
 </head>
 
@@ -64,7 +93,24 @@ function MM_swapImage() { //v3.0
   </header>
   <main>
     <section id="apparel"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('dress-blue','','dress-blue-rev.jpg',1)"><img src="dress-blue-front.jpg" alt="Dress Blue" width="372" height="570" id="dress-blue"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('dress-green','','dress-green-rev.jpg',1)"><img src="dress-green-front.jpg" alt="Dress Green" width="372" height="570" id="dress-green"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('dress-purple','','dress-purple-rev.jpg',1)"><img src="dress-purple-front.jpg" alt="Dress Purple" width="372" height="570" id="dress-purple"></a></section>
-    <section id="description"></section>
+    <section id="description">
+      <h2>Long Dress</h2>
+      <p>A description of this product.</p>
+      <h3>$199.99</h3>
+      <div id="colors">
+        <button id="blue-btn" onClick="MM_showHideLayers('dress-blue','','show','dress-green','','hide','dress-purple','','hide')"></button>
+        <button id="green-btn" onClick="MM_showHideLayers('dress-blue','','hide','dress-green','','show','dress-purple','','hide')"></button>
+        <button id="purple-btn" onClick="MM_showHideLayers('dress-blue','','hide','dress-green','','hide','dress-purple','','show')"></button>
+      </div>
+      <h3>Sizes</h3>
+      <div id="sizes">
+        <button>2</button>
+        <button>4</button>
+        <button>6</button>
+        <button>8</button>
+      </div>
+      <button id="cart">Add to Cart</button>
+    </section>
   </main>
   <footer></footer>
 </wrapper>
