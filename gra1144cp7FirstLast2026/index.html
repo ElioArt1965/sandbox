@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travelocity | Elio Arteaga, 2026</title>
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(eiffel-tower.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+}
+header {
+    height: 72px;
+    background-color: #0a438b;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+    height: 700px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.50);
+}
+#Tabs1 ul {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 {
+    background-color: transparent;
+    background-image: none;
+}
+#tabs-1,#tabs-2,#tabs-3,#tabs-4,#tabs-5{
+    background-color: rgba(255,255,255,0.50);
+}
+#Tabs1 div p input        {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    height: 23px;
+}
+#Tabs1 div p select        {
+    padding: 10px;
+}
+.searchbtn {
+    background-color: #0d5ab9;
+    border-radius: 20px;
+    color: white;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header><img src="logo.svg" alt="" width="165" height="40"></header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1">Hotels</a></li>
+      <li><a href="#tabs-2">Flights</a></li>
+      <li><a href="#tabs-3">Cars</a></li>
+      <li><a href="#tabs-4">Activities</a></li>
+      <li><a href="#tabs-5">Cruises</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p><input type="text" placeholder="Leaving from">
+        <input type="date">
+      <input type="text" placeholder="Going to"><input type="date"><select>
+        <option value="0">Number of Travelers</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select><input type="submit" class="searchbtn" value="Search"></p>
+    </div>
+    <div id="tabs-2">
+      <p>Content 2</p>
+    </div>
+    <div id="tabs-3">
+      <p><input type="text" placeholder="Pick Up"><input type="date"><input type="time"><input type="text" placeholder="Return"><input type="date"><input type="time"></p>
+    </div>
+    <div id="tabs-4">
+      <p>Content 4</p>
+    </div>
+    <div id="tabs-5">
+      <p>Content 5</p>
+    </div>
+  </div>
+</wrapper>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
